@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title><pog/title>
+<style>
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 150px 75px 75px; 
+  grid-template-rows: 50px 50px 50px 50px; 
+  gap: 8px;
+  width: 308px; 
+  box-sizing: border-box;
+  padding: 8px;
+  height: 208px;
+}
+
+
+.blue {
+  background-color: #3366CC;
+}
+
+.yellow {
+  background-color: #FFCC33;
+}
+
+.green {
+  background-color: #33CC66;
+}
+
+/* Block sizing and placement */
+.blue-large {
+  grid-column: 1;
+}
+
+.blue-small {
+  /* Default placement */
+}
+
+.yellow-wide {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.yellow-square {
+  grid-row: 2;
+}
+
+.green-wide {
+  grid-column: 1;
+}
+
+.green-tall {
+    grid-column: 1;
+    grid-row: 4;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="blue blue-large"></div>
+  <div class="blue blue-small"></div>
+  <div class="blue blue-small"></div>
+
+  <div class="yellow yellow-wide"></div>
+  <div class="yellow yellow-square"></div>
+  <div class="yellow yellow-square"></div>
+
+  <div class="green green-wide"></div>
+  <div class="green"></div>
+  <div class="green"></div>
+
+  <div class="green green-tall"></div>
+  <div class="green"></div>
+  <div class="green"></div>
+</div>
+
+</body>
+</html>
